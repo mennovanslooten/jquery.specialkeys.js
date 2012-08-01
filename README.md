@@ -17,6 +17,10 @@ $('.some-selector').on('shift_downkey', function(e) {
 });
 ```
 
+## Demo
+
+A demo can be found here: http://mennovanslooten.github.com/jquery.specialkeys.js/test.html
+
 The following new key names have supported events (both `[name]key` as well as `shift_[name]key`):
 
 - backspace
