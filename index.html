@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery.specialkeys.js : A jQuery plugin to make keyboard event handling for special keys (enter, space, up, down, etc) a breeze." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery.specialkeys.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mennovanslooten/jquery.specialkeys.js">View on GitHub</a>
+
+          <h1 id="project_title">Jquery.specialkeys.js</h1>
+          <h2 id="project_tagline">A jQuery plugin to make keyboard event handling for special keys (enter, space, up, down, etc) a breeze.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mennovanslooten/jquery.specialkeys.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mennovanslooten/jquery.specialkeys.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jquery.specialkeys.js</h1>
+
+<h2>What is this?</h2>
+
+<p>It's a plugin for jQuery that extends the standard events so you can do this:</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.some-selector'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'enterkey'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// the user pressed the enter key</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>or even this:</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.some-selector'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'shift_downkey'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// the user pressed shift+down</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>The following new key names have supported events (both <code>[name]key</code> as well as <code>shift_[name]key</code>):</p>
+
+<ul>
+<li>backspace</li>
+<li>delete</li>
+<li>left</li>
+<li>up</li>
+<li>right</li>
+<li>down</li>
+<li>tab</li>
+<li>enter</li>
+<li>space</li>
+<li>escape</li>
+<li>esc</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.specialkeys.js maintained by <a href="https://github.com/mennovanslooten">mennovanslooten</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
