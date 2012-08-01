@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://raw.github.com/mennovanslooten/jquery.specialkeys.js/master/jquery.specialkeys.js"></script>
+    </head>
+    <body>
+        <h1>jquery.specialkeys.js tests:</h1>
+
+        <form>
+            <p>Focus the input below and press any of the following keys, (with or without the shift key). You should see the result underneath the input.</p>
+            <ul id="keys"></ul>
+            <p><input type="text" id="test"></p>
+            <pre id="result"></pre>
+        </form>
+
+        <script>
+            (function($) {
+                var keys = {
+                    backspace: 8,
+                    'delete': 46,
+                    left: 37,
+                    up: 38,
+                    right: 39,
+                    down: 40,
+                    tab: 9,
+                    enter: 13,
+                    space: 32,
+                    escape: 27,
+                    esc: 27
+                };
+
+                var list = $('#keys');
+                var input = $('#test');
+                var result = $('#result');
+
+                $.each(keys, function(name, which) {
+                    list.append('<li><code>' + name + '</code></li>');
+
+                    input.on(name + 'key', function(e) {
+                        result.html('<p>' + name + ' key pressed.</p>');
+                        e.preventDefault();
+                    });
+
+                    input.on('shift_' + name + 'key', function(e) {
+                        result.html('<p>SHIFT+' + name + ' keys pressed.</p>');
+                        e.preventDefault();
+                    });
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
