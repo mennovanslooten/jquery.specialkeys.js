@@ -17,7 +17,7 @@ $('.some-selector').on('shift_downkey', function(e) {
 });
 ```
 
-The following new keyboard events are supported (both **[name]**key as well as shift_**[name]**key):
+The following new key names have supported events (both `**[name]**key` as well as `shift_**[name]**key`):
 
 - backspace
 - delete
