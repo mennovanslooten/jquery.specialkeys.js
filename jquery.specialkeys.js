@@ -15,7 +15,7 @@
             handler: function(event) {
                 if (event.which === which && event.shiftKey === shift) {
                     event.type = name;
-                    jQuery.event.handle.apply(this, arguments);
+                    ($.event.dispatch || $.event.handle).apply(this, arguments);
                 }
             }
         };
